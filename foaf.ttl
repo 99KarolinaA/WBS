@@ -1,1 +1,26 @@
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix ns0: <http://webns.net/mvcb/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
+<https://raw.githubusercontent.com/99KarolinaA/WBS/main/foaf.ttl>
+  a foaf:PersonalProfileDocument ;
+  foaf:maker <https://raw.githubusercontent.com/99KarolinaA/WBS/main/foaf.ttl#me> ;
+  foaf:primaryTopic <https://raw.githubusercontent.com/99KarolinaA/WBS/main/foaf.ttl#me> ;
+  ns0:generatorAgent <http://www.ldodds.com/foaf/foaf-a-matic> ;
+  ns0:errorReportsTo <mailto:leigh@ldodds.com> .
+
+<https://raw.githubusercontent.com/99KarolinaA/WBS/main/foaf.ttl#me>
+  a foaf:Person ;
+  foaf:name "Karolina Angelova" ;
+  foaf:title "Ms" ;
+  foaf:givenname "Karolina" ;
+  foaf:family_name "Angelova" ;
+  foaf:nick "Kerol" ;
+  foaf:mbox_sha1sum "7fff5ec11021f44b0a6513ea0b3ac30c02cdf5f1" ;
+  foaf:schoolHomepage <https://orcenikolov.edu.mk/> ;
+  foaf:knows [
+    a foaf:Person ;
+    foaf:name "Ema" ;
+    foaf:mbox_sha1sum "cb371c5e923983f9e53ed312c66310b46e9e8eca" ;
+    rdfs:seeAlso <https://raw.githubusercontent.com/emastojanovska/foaf-profile/main/foaf.ttl>
+  ] .
